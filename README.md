@@ -89,14 +89,14 @@ AHP분석이란, ***평가기준이 다수인 문제 상황에서 이원(쌍대)
 대상을 A, 각각의 가중치를 W로 정의하고 n개의 대상간 이원(쌍대)비교행렬로 표현
 이원(쌍대)비교행렬로 부터 *Eigenvalue Method*를 거쳐 특정 기준 하에서 대안들의 상대적 선호도의 기준들의 가중치 도출
 ![비교행렬](./img/비교행렬.png)
-```math
-\sum_{i=1}^n \lambda_i = tr(A) \equiv \text{sum of the diagonal elements = n}\;\lambda_i \text{는 eigenvalue of}\;A
-```
+
+![EigenValue](./img/eigenvalue.png)
+
 - 판단의 일관성 측정
 Λmax(Max Eigenvalue)가 *n*에 어느정도 근접했는지 알 수 있는 척도를 통해 일관성지수(*CI*) 추출 후, 평균 무작위지수(*CR*) 추출
-```math
-CI = \frac{\Lambda max - n}{n - 1}\quad CR = \frac{CI}{RI} 
-```
+
+![CR_CI](./img/CR_CI.png)
+
 - 가중치 도출 결과
 
 신뢰성 있는 전문가들의 AHP 설문 결과를 바탕으로 일관성 비율(CR < 0.2) 만족시키는 설문 5건에 한해 가중치 도출

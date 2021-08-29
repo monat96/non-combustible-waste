@@ -40,6 +40,7 @@
 - 인구는 군집으로 분류될 수 있기 떄문에 인구와 밀접한 요인들을 선형회귀 분석하여 군집 요인 도출
 --> 불연성쓰레기 배출량, 대중교통 수, 주택수
 #### 입지 요인 선정
+
 <center>
 <img src='img/논문.png'>
 </center>
@@ -66,6 +67,7 @@
 
 #### 군집 수 선정
 Dendrogram(계층도)를 참고하여 총 16개 구군을 3개의 군집으로 선정
+
 <center>
 <img src='img/군집 수 선정.png'>
 </center>
@@ -84,18 +86,29 @@ Dendrogram(계층도)를 참고하여 총 16개 구군을 3개의 군집으로 �
 #### 계층적 분석 과정(AHP: Analytic Hierarchy Process)
 AHP분석이란, ***평가기준이 다수인 문제 상황에서 이원(쌍대)비교를 통해 선호도를 비교하여 정량적 · 정성적 요소 평가***
 - AHP 설문 구성
-![설문조사](./img/설문조사.png)
+<center>
+    <img src='img/설문조사.png'>
+</center>
+
 - AHP 연산 과정
 대상을 A, 각각의 가중치를 W로 정의하고 n개의 대상간 이원(쌍대)비교행렬로 표현
 이원(쌍대)비교행렬로 부터 *Eigenvalue Method*를 거쳐 특정 기준 하에서 대안들의 상대적 선호도의 기준들의 가중치 도출
-![비교행렬](./img/비교행렬.png)
 
-![EigenValue](./img/eigenvalue.png)
+<center>
+    <img src='img/비교행렬.png'>
+</center>
+
+
+<center>
+    <img src='img/eigenvalue.png'>
+</center>
 
 - 판단의 일관성 측정
 Λmax(Max Eigenvalue)가 *n*에 어느정도 근접했는지 알 수 있는 척도를 통해 일관성지수(*CI*) 추출 후, 평균 무작위지수(*CR*) 추출
 
-![CR_CI](./img/CR_CI.png)
+<center>
+    <img src='CR_CI.png'>
+</center>
 
 - 가중치 도출 결과
 

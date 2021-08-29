@@ -41,9 +41,7 @@
 --> 불연성쓰레기 배출량, 대중교통 수, 주택수
 #### 입지 요인 선정
 
-<center>
-<img src='img/논문.png'>
-</center>
+![참조논문](./img/논문.png)
 
 > 강명지, 'GIS를 이용한 쓰레기 소각장 입지 선정에 관한 연구' 참고
 - 주거요인
@@ -61,54 +59,36 @@
 - 구군별 데이터로 유사한 특성을 갖는 군집 형성 과정 파악
 - *single*, *complete*, *average*, *centroid*, *ward* 중 *complete* 방법으로 부산시 16개 구군을 세 군집으로 군집화(*complete*: 군집 요소들 간 거리 중 가장 큰 수치를 군집 간 거리로 설정)
 
-<center>
-<img src='img/Method별 계층적 군집.png'>
-</center>
+![Method별 계층적 군집](./img/Method별계층적군집.png)
 
 #### 군집 수 선정
 Dendrogram(계층도)를 참고하여 총 16개 구군을 3개의 군집으로 선정
 
-<center>
-<img src='img/군집 수 선정.png'>
-</center>
-
+![군집수선정](./img/군집수선정.png)
 
 #### 군집별 특성 분석
 - 계층적 군집 분석으로 나눈 세 가지 군집을 막대그래프를 활용해, 군집별 유사성 파악
     - 군집 1(불연성쓰레기 배출량이 많은 군집):진구, 동래구, 남구, 북구, 해운대구, 사하구, 금정구, 사상구
     - 군집 2(유동인구가 많은 군집): 강서구, 기장군
     - 군집 3(면적 대비 주택수가 많은 군집): 서구, 중구, 동구, 영도구, 연제구, 수영구
+    
+![군집별현황](./img/군집별현황.png)
 
-<center>
-<img src='img/군집별 현황.png'>
-</center>
 
 #### 계층적 분석 과정(AHP: Analytic Hierarchy Process)
 AHP분석이란, ***평가기준이 다수인 문제 상황에서 이원(쌍대)비교를 통해 선호도를 비교하여 정량적 · 정성적 요소 평가***
 - AHP 설문 구성
-<center>
-    <img src='img/설문조사.png'>
-</center>
+![설문조사](./img/설문조사.png)
 
 - AHP 연산 과정
 대상을 A, 각각의 가중치를 W로 정의하고 n개의 대상간 이원(쌍대)비교행렬로 표현
 이원(쌍대)비교행렬로 부터 *Eigenvalue Method*를 거쳐 특정 기준 하에서 대안들의 상대적 선호도의 기준들의 가중치 도출
-
-<center>
-    <img src='img/비교행렬.png'>
-</center>
-
-
-<center>
-    <img src='img/eigenvalue.png'>
-</center>
+![비교행렬](./img/비교행렬.png)
+![EigenValue](./img/eigenvalue.png)
 
 - 판단의 일관성 측정
 Λmax(Max Eigenvalue)가 *n*에 어느정도 근접했는지 알 수 있는 척도를 통해 일관성지수(*CI*) 추출 후, 평균 무작위지수(*CR*) 추출
-
-<center>
-    <img src='CR_CI.png'>
-</center>
+![CR_CI](./img/CR_CI.png)
 
 - 가중치 도출 결과
 
